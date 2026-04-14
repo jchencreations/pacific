@@ -1,0 +1,176 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial;
+    background: #E4E4E4;
+}
+
+
+/*HEADER STUFF*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1vh 2vw 1vh 2vw;
+    width: 100%;
+    height: 10vh; /* Example height */
+    background: white;
+    font-size: 3vh;
+    color: #2B396D;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    z-index: 1;
+}
+
+.nav-links {
+    justify-self: right;
+    display: flex;
+    list-style: none;
+    gap: 1vw;
+}
+    .nav-links a {
+        text-decoration: none;
+        color: #2B396D;
+        transition: color 0.2s;
+    }
+        .nav-links a:hover {
+            color: #007bff;
+        }
+
+.hero-content {
+    position: relative;
+    max-width: 50vw;
+    font-size: 2vh;
+    color: #2B396D
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+}
+
+.jump-btn {
+    display: inline-block;
+    padding: 3vh 3vw;
+    background: #2B396D;
+    color: white;
+    text-decoration: none;
+    border-radius: 3vh  ;
+    font-size: 2vh;
+}
+
+    .jump-btn:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+    }
+
+
+/*SVG*/
+.hero {
+    padding-top: 20vh;
+    min-height: 100vh;
+    overflow: hidden;
+    background: white; /* matches the top of your SVG's color range */
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+    text-align: center;
+}
+
+    h2 {
+        font-size: 8vh;
+    }
+
+.visual {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+}
+
+
+/*ABOUT*/
+.about {
+    position: relative;
+    padding-top: 20vh;
+    padding-left: 5vw;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #0B0B0B;
+}
+
+/*services*/
+.services {
+    position: relative;
+    padding-top: 20vh;
+    padding-left: 5vw;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #222644;
+}
+
+/*contact*/
+.contact {
+    position: relative;
+    padding-top: 20vh;
+    padding-left: 5vw;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #2b396d;
+}
+
+/*Footer*/
+.footer {
+    top: 0;
+    left: 0;
+    padding: 1vh 1vw 1vh 2vw;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+    background: white;
+    font-size: 3vh;
+    color: #2B396D;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+
+/*Waves*/
+.wave-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+    .wave-divider svg {
+        display: block;
+        width: 100%;
+        height: 10vh;
+    }
+
+
+
+

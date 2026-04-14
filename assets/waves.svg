@@ -1,0 +1,100 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+
+  <style>
+    /* Faster animation */
+    .layer1 { animation: move1 19s linear infinite; }/*Furthest*/
+    .layer2 { animation: move2 15s linear infinite; }
+    .layer3 { animation: move3 11s linear infinite; }
+    .layer4 { animation: move4 7s linear infinite; }
+    .layer5 { animation: move5 5s linear infinite; }
+    .layer6 { animation: move6 3s linear infinite; } /*Closest*/
+
+    @keyframes move1 { from { transform: translateX(0); } to { transform: translateX(-1920px); } }
+    @keyframes move2 { from { transform: translateX(0); } to { transform: translateX(-1920px); } }
+    @keyframes move3 { from { transform: translateX(0); } to { transform: translateX(-1920px); } }
+    @keyframes move4 { from { transform: translateX(0); } to { transform: translateX(-1920px); } }
+    @keyframes move5 { from { transform: translateX(0); } to { transform: translateX(-1920px); } }
+    @keyframes move6 { from { transform: translateX(0); } to { transform: translateX(-1920px); } }
+  </style>
+
+<!-- Layer 1 -->
+<g class="layer1">
+  <g>
+    <path d="M0 800
+             C120 800, 260 860, 480 875
+             C660 885, 840 880, 1020 870
+             C1200 860, 1380 835, 1660 805
+             C1780 800, 1920 800, 1920 800
+             L1920 1081 L0 1081 Z" fill="#2b396d"/>
+  </g>
+  <g transform="translate(1919,0)">
+    <path d="M0 800
+             C120 800, 260 860, 480 875
+             C660 885, 840 880, 1020 870
+             C1200 860, 1380 835, 1660 805
+             C1780 800, 1920 800, 1920 800
+             L1920 1081 L0 1081 Z" fill="#2b396d"/>
+  </g>
+</g>
+
+  <!-- Layer 2 -->
+  <g class="layer2">
+    <g>
+      <path d="M0 886 C120 880, 300 870, 480 850 C660 830, 840 800, 1020 810 C1200 820, 1380 850, 1560 865 C1740 875, 1800 886, 1920 886 L1920 1081 L0 1081 Z" fill="#273058"/>
+    </g>
+    <g transform="translate(1919,0)">
+      <path d="M0 886 C120 880, 300 870, 480 850 C660 830, 840 800, 1020 810 C1200 820, 1380 850, 1560 865 C1740 875, 1800 886, 1920 886 L1920 1081 L0 1081 Z" fill="#273058"/>
+    </g>
+  </g>
+
+<!-- Layer 3 (flattened) -->
+<g class="layer3">
+  <g>
+    <path d="M0 813
+             C160 813, 360 870, 540 878
+             C720 886, 900 878, 1080 870
+             C1260 862, 1440 858, 1600 840
+             C1720 825, 1920 813, 1920 813
+             L1920 1081 L0 1081 Z" fill="#222644"/>
+  </g>
+  <g transform="translate(1919,0)">
+    <path d="M0 813
+             C160 813, 360 870, 540 878
+             C720 886, 900 878, 1080 870
+             C1260 862, 1440 858, 1600 840
+             C1720 825, 1920 813, 1920 813
+             L1920 1081 L0 1081 Z" fill="#222644"/>
+  </g>
+</g>
+
+  <!-- Layer 4 -->
+  <g class="layer4">
+    <g>
+      <path d="M0 901 C120 910, 300 930, 480 940 C660 950, 840 940, 1020 930 C1200 920, 1380 905, 1560 910 C1740 920, 1800 901, 1920 901 L1920 1081 L0 1081 Z" fill="#1c1e31"/>
+    </g>
+    <g transform="translate(1919,0)">
+      <path d="M0 901 C120 910, 300 930, 480 940 C660 950, 840 940, 1020 930 C1200 920, 1380 905, 1560 910 C1740 920, 1800 901, 1920 901 L1920 1081 L0 1081 Z" fill="#1c1e31"/>
+    </g>
+  </g>
+
+  <!-- Layer 5 -->
+  <g class="layer5">
+    <g>
+      <path d="M0 922 C120 925, 300 940, 480 950 C660 960, 840 970, 1020 940 C1200 910, 1380 915, 1560 920 C1740 925, 1800 922, 1920 922 L1920 1081 L0 1081 Z" fill="#15161f"/>
+    </g>
+    <g transform="translate(1919,0)">
+      <path d="M0 922 C120 925, 300 940, 480 950 C660 960, 840 970, 1020 940 C1200 910, 1380 915, 1560 920 C1740 925, 1800 922, 1920 922 L1920 1081 L0 1081 Z" fill="#15161f"/>
+    </g>
+  </g>
+
+  <!-- Layer 6 -->
+  <g class="layer6">
+    <g>
+      <path d="M0 1007 C120 1005, 300 1000, 480 995 C660 990, 840 995, 1020 1005 C1200 1015, 1380 1020, 1560 1025 C1740 1030, 1800 1007, 1920 1007 L1920 1081 L0 1081 Z" fill="#0b0b0b"/>
+    </g>
+    <g transform="translate(1919,0)">
+      <path d="M0 1007 C120 1005, 300 1000, 480 995 C660 990, 840 995, 1020 1005 C1200 1015, 1380 1020, 1560 1025 C1740 1030, 1800 1007, 1920 1007 L1920 1081 L0 1081 Z" fill="#0b0b0b"/>
+    </g>
+  </g>
+
+</svg>
