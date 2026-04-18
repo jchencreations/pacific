@@ -111,31 +111,42 @@ header {
 /*ABOUT*/
 .about {
     position: relative;
-    padding-top: 20vh;
-    padding-left: 5vw;
+    padding: 5vh 5vw 5vh 5vw;
     min-height: 100vh;
     overflow: hidden;
     background: #0B0B0B;
+    color: white;
 }
+    .photo {
+        width: 20vw;
+        height: auto;
+        align-self: center;
+    }
+    .photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        padding: 5vh 5vw 5vh 5vw;
+    }
 
 /*services*/
-.services {
+    .services {
     position: relative;
-    padding-top: 20vh;
-    padding-left: 5vw;
+    padding: 5vh 5vw 5vh 5vw;
     min-height: 100vh;
     overflow: hidden;
     background: #222644;
+    color: white;
 }
 
 /*contact*/
 .contact {
     position: relative;
-    padding-top: 20vh;
-    padding-left: 5vw;
+    padding: 5vh 5vw 5vh 5vw;
     min-height: 100vh;
     overflow: hidden;
     background: #2b396d;
+    color: white;
 }
 
 /*Footer*/
