@@ -161,7 +161,7 @@
         <h2>Get in touch</h2>
         <p class="subtitle">Have a question or want to work with Pacific Creations? We'd love to hear from you.</p>
 
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="31bd1e01-4196-4156-af4d-e569146d8d4f">
             <input type="checkbox" name="botcheck" style="display: none;" />
 
@@ -205,35 +205,35 @@
 
 
     <script>
-    document.getElementById('contact-form').addEventListener('submit', async function (e) {
-        e.preventDefault();
-        const btn = document.getElementById('submit-btn');
-        const status = document.getElementById('form-status');
-        btn.disabled = true;
-        btn.textContent = 'Sending…';
-        status.style.display = 'none';
-        const data = Object.fromEntries(new FormData(this));
-        try {
-            const res = await fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data)
-            });
-            const json = await res.json();
-            if (json.success) {
-                status.textContent = "Message sent! We'll be in touch soon.";
-                status.className = 'success';
-                this.reset();
-            } else throw new Error();
-        } catch {
-            status.textContent = 'Something went wrong. Please try again.';
-            status.className = 'error';
-        } finally {
-            status.style.display = 'block';
-            btn.disabled = false;
-            btn.textContent = 'Send message';
-        }
-    });
+        document.getElementById('contact-form').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const btn = document.getElementById('submit-btn');
+            const status = document.getElementById('form-status');
+            btn.disabled = true;
+            btn.textContent = 'Sending…';
+            status.style.display = 'none';
+            const data = Object.fromEntries(new FormData(this));
+            try {
+                const res = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                const json = await res.json();
+                if (json.success) {
+                    status.textContent = "Message sent! We'll be in touch soon.";
+                    status.className = 'success';
+                    this.reset();
+                } else throw new Error();
+            } catch {
+                status.textContent = 'Something went wrong. Please try again.';
+                status.className = 'error';
+            } finally {
+                status.style.display = 'block';
+                btn.disabled = false;
+                btn.textContent = 'Send message';
+            }
+        });
     </script>
 </body>
 </html>
